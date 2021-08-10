@@ -4,34 +4,8 @@
 <div class='clearfix'></div>
 <hr/>
 
-<table class="table table-bordered">
-  <thead>
-    <th>ID</th>
-    <th>Name</th>
-    <th>E-mail</th>
-    <th>Created On</th>
-  </thead>
+<div class="row">
 
-  <%
-=begin%>
- <tbody>
-    <%- @contacts.each do |contact| %>
-      <tr>
-        <td><%= contact.id %></td>
-        <td><%= contact.first_name %> <%= contact.last_name %></td>
-        <td><%= contact.email %></td>
-        <td><%= contact.created_at.strftime("%d %b. %Y") %></td>
-      </tr>
-    <% end %>
-  </tbody> 
-<%
-=end%>
-</table>
+  <span data-blast-hook='admin_list'></span>
 
-<%
-=begin%>
- <div class="panel-body text-center">
-  <%= link_to '...', contacts_path %>
-</div> 
-<%
-=end%>
+</div>

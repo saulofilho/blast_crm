@@ -12,15 +12,11 @@
    <% end %>
   </li>
 
-  <%
-=begin%>
  <li class="nav-item">
-    <%= link_to blast.contacts_path,
-                class: "nav-link #{active(blast.contacts_path)}" do %>
+    <%= link_to blast.admin_contacts_path,
+                class: "nav-link #{active(blast.admin_contacts_path)}" do %>
      Contacts
      <span class="badge">(<%= @contacts_count %>)</span>
    <% end %>
   </li> 
-<%
-=end%>
 </ul>

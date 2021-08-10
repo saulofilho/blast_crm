@@ -29,34 +29,15 @@
       </table>
     </div>
   </div>
-</div>
-
-<%
-=begin%>
- <div class="row">
   <div class="col-md-6">
     <div class="card">
       <div class="card-header">
         Last 3 contacts
         <div class="float-right">
-          <%= link_to 'See All', blast.contacts_path %>
+          <%= link_to 'See All', blast.admin_contacts_path %>
         </div>
       </div>
-      <table class="table table-bordered mb-0">
-        <tbody>
-          <%- @contacts.each do |contact| %>
-            <tr>
-              <td><%= contact.id %></td>
-              <td><%= contact.email %></td>
-              <td class="text-right">
-                <%= contact.created_at.strftime("%d %b. %Y") %>
-              </td>
-            </tr>
-          <% end %>
-        </tbody>
-      </table>
+      <span data-blast-hook='admin_dashboard'></span>
     </div>
   </div>
-</div> 
-<%
-=end%>
+</div>
