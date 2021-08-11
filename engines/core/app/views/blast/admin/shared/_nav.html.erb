@@ -16,7 +16,7 @@
     <%= link_to blast.admin_contacts_path,
                 class: "nav-link #{active(blast.admin_contacts_path)}" do %>
      Contacts
-     <span class="badge">(<%= @contacts_count %>)</span>
+     <span class="badge">(<%= @contacts.count %>)</span>
    <% end %>
   </li>
 
@@ -24,7 +24,7 @@
     <%= link_to blast.admin_tasks_path,
                 class: "nav-link #{active(blast.admin_tasks_path)}" do %>
      Tasks
-     <span class="badge">(<%= @tasks_count %>)</span>
+     <span class="badge">(<%= @tasks.count %>)</span>
    <% end %>
   </li> 
 </ul>
