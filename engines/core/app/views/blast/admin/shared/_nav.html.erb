@@ -9,14 +9,22 @@
                 class: "nav-link #{active(blast.admin_users_path)}" do %>
      Users
      <span class="badge">(<%= @users_count %>)</span>
-   <% end %>
+    <% end %>
   </li>
 
- <li class="nav-item">
+  <li class="nav-item">
     <%= link_to blast.admin_contacts_path,
                 class: "nav-link #{active(blast.admin_contacts_path)}" do %>
      Contacts
      <span class="badge">(<%= @contacts_count %>)</span>
+   <% end %>
+  </li>
+
+  <li class="nav-item">
+    <%= link_to blast.admin_tasks_path,
+                class: "nav-link #{active(blast.admin_tasks_path)}" do %>
+     Tasks
+     <span class="badge">(<%= @tasks_count %>)</span>
    <% end %>
   </li> 
 </ul>

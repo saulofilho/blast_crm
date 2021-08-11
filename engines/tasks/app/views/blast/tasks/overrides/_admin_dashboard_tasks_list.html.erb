@@ -1,0 +1,12 @@
+<table class="table table-bordered mb-0">
+  <tbody>
+    <%- @tasks.limit(3).each do |task| %>
+      <tr>
+        <td><%= task.id %></td>
+        <td><%= task.title %></td>
+        <td><%= task.content %></td>
+        <td><%= task.created_at.strftime("%d %b. %Y") %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
